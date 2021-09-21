@@ -1,0 +1,145 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.leaf-icon, .leaf-icon-white {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+}
+
+.leaf-icon {
+	background-image: url(../images/icons/leaf.png);
+}
+
+.leaf-icon-white {
+	background-image: url(../images/icons/leaf-white.png);
+}
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+a {
+	.link-icon {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.link-icon {
+			@include translateX(1rem);
+		}
+	}	
+}
+
+.about {
+	p {
+		font-size: 0.875rem;
+		font-family: $body-font;
+		line-height: 1.5rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+
+		.col-lg-4 {
+			.bg-primary {
+				padding: 2rem !important;
+			}
+		}
+	}
+
+	.about-banner-content {
+		h4 {
+			font-size: 1.325rem;
+			color: #66c584;
+			font-weight: 400;
+		}
+
+		@include media-breakpoint-down(sm) {
+			.w-50 {
+				width: auto !important;
+			}
+		}
+	}
+}
+
+.about-us-link {
+	a {
+		padding: 0.5rem 4rem;
+		background-color: $theme-color;
+		color: white;
+		text-decoration: none;
+		font-size: .75rem;
+		border-radius: 2rem;
+		display: inline-block;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 1rem;
+	}
+}
+
+
+.about-content {
+	h3 {
+		font-size: 2.25rem;
+	}
+
+	p {
+		font-size: 0.75rem;
+		color: #9c9c9f;
+		line-height: 1.3rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		margin-top: 1rem !important;
+	}
+}
+
+.carousel-indicator {
+	margin-top: 4rem;
+
+	li {
+		list-style: none;
+		padding: 0rem;
+
+		i {
+			font-size: 0.5rem;
+			color: #d6d7d8;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 2rem;
+	}
+}
+
+.sale-banner {
+	padding: 2rem;
+
+	i {
+		font-size: 1.5rem;
+	}
+
+	p {
+		color: #929699;
+		line-height: 1.2rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem;
+	}
+}

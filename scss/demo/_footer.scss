@@ -1,0 +1,49 @@
+
+/* ----------------------------------------------------------------
+
+	footer.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for footer. Thanks!
+-----------------------------------------------------------------*/
+
+#footer {
+	position: relative;
+	font-size: 0.9rem;
+
+	@include media-breakpoint-down(lg) {
+		.col-lg-8, .col-lg-4 {
+			border: 0 !important;
+			padding: 0 !important;
+		}
+	}
+}
+
+#footer-main {
+	padding-top: 3.8rem;
+	padding-bottom: 1.8rem;
+	
+	@include media-breakpoint-down(sm) {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+
+#copyrights {
+	color: #ccc9c8;
+	font-size: 0.875rem;
+	font-weight: 300;	
+	line-height: 2;
+	z-index: 1;	
+
+	@include media-breakpoint-down(sm) {
+		font-size: 0.7rem;
+	}
+}

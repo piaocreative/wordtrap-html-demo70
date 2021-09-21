@@ -1,0 +1,52 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+#contact-info {
+	padding: 6rem 0;
+
+    h5 {
+		font-family: $heading-font;
+        font-size: 0.875rem;
+        font-weight: 700;
+		color: $white;
+		margin-bottom: 1.325rem;
+		letter-spacing: 0.05rem;
+    }
+}
+
+#contact-sidebar {
+	position: relative;
+
+	input {
+		padding: 1rem;
+		border: 1px solid #e3e3e3;
+	}
+
+	button {
+		padding: 1rem 4rem;
+		letter-spacing: 0.05rem;
+	}
+
+	label {
+		font-family: $body-font;
+		font-weight: 300;
+		color: #8c8b8a;
+	}
+
+	form {
+		position: absolute;
+		top: 9rem;
+		width: 100%;
+		padding: 0 6rem;
+
+		@include media-breakpoint-down(sm) {
+			top: 7rem;
+		}
+
+		@include media-breakpoint-up(lg) {
+			top: 9rem;
+		}
+	}
+}

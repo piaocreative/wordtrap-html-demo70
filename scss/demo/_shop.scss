@@ -1,0 +1,246 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: 2rem;
+	position: relative;
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	background-color: $white;
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+			border-radius: 0.5rem;
+		}
+	}
+
+	.product-details {
+		background-color: $white;
+		padding: 0 0.75rem;
+	}
+
+	.product-price {
+		font-size: 1.5rem;
+		font-family: $heading-font;
+		font-weight: 700;
+		color: #282828;
+		color: $secondary;
+
+		del {
+			font-family: $body-font;
+			color: #acaeaf;
+			font-size: 1rem;
+			font-weight: 300;
+		}
+	}
+
+	.product-info {
+		font-family: $body-font;
+		font-weight: 300;
+		color: #dfdddf;
+	}
+
+	.product-title {
+		font-family: $body-font;
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
+	.product-btns {
+		background-color: $white;
+	}
+
+	.product-rating {
+		line-height: 1;
+
+		i {
+			color: $theme-color;
+			font-size: 0.6rem;
+
+			&.empty {
+				color: rgba($theme-color, 0.5);
+			}
+		}
+	}
+
+	.add-to-cart {
+		font-family: $heading-font;
+		font-weight: 700;
+		padding: 0.5rem 1.5rem;
+		display: block;
+		font-size: 0.875rem;
+		border-radius: 0.5rem;
+		color: $theme-color;
+		background-color: #f0f1fd;
+		text-align: center;
+		text-decoration: none;
+
+		&:hover {
+			background-color: $theme-color;
+			color: $white;
+		}
+	}
+
+	.add-to-wishlist {
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: #ccc;
+		font-size: 1.25rem;
+		line-height: 1;		
+		z-index: 2;	
+
+		@include transition(all 0.3s ease-in-out);				
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+
+.onbest,
+.ontop,
+.onnew,
+.onhot,
+.onsale {
+	font-family: $heading-font;
+    font-size: .75rem;
+    line-height: 1;
+    font-weight: 700;
+	padding: .35rem .7rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    z-index: 2;
+	text-transform: uppercase;
+	color: $white;
+	letter-spacing: 0.03rem;
+	background-repeat: no-repeat;
+	width: 3.5rem;
+	height: 2rem;
+}
+
+	.onhot {
+		background-color: #ff3263;
+		color: $white;
+	}
+
+	.onnew {
+		background-image: url(../images/icons/new.png);
+		text-transform: inherit;
+	}
+
+	.onbest {
+		background-image: url(../images/icons/best.png);
+	}
+
+	.onsale {
+		background-image: url(../images/icons/sale.png);
+	}
+
+	.ontop {
+		background-image:url(../images/icons/top.png);
+	}
+}
+
+
+/* Ads
+-----------------------------------------------------------------*/
+
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
+
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+			border-radius: 0.5rem;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+		height: 15.5rem;
+
+		li {
+			font-family: $body-font;
+			font-size: 0.9375rem;
+			font-weight: 300;
+			color: $white;
+			line-height: 1.65;
+		}
+
+		h2 {
+			font-size: 4.3rem;
+			line-height: 1;
+		}
+
+		h1 {
+			font-size: 9.92rem;
+			line-height: 1;
+		}
+
+		.onsale {
+			font-family: $heading-font;
+			font-size: 5rem;
+			font-weight: 700;
+			padding: 2rem;
+			border-radius: 50%;
+			color: $white;
+			width: 14rem;
+			height: 14rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $theme-color;
+		}
+    }
+
+	&.ads1 {
+		height: 32.5rem;
+	}
+
+	&.ads0 {
+		img {
+			height: 24.5rem;
+
+			@include media-breakpoint-down(xxl) {
+				height: 22.5rem;
+			}
+		}
+	}
+}

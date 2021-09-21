@@ -1,0 +1,71 @@
+
+/* ----------------------------------------------------------------
+
+	blog.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+
+.post {
+	position: relative;
+	margin-bottom: 1.875rem;
+	padding: 2rem;
+	border-bottom: 5px solid $theme-color;
+	border-radius: 0.135rem;
+
+	&:hover {
+		background-color: $theme-color;
+		border-radius: 0.5rem;
+
+		.entry-title, .entry-content, .entry-link {
+			color: $white;
+		}
+	}
+}
+
+.post-thumbnail {
+	display: block;
+	position: relative;
+	width: 12rem;
+	height: 100%;
+	margin: auto;
+
+	a {
+		display: block;
+	}
+}
+
+.post-content {
+	.entry-title {
+		font-family: $heading-font;
+		font-weight: 700;
+		line-height: 1.35;
+	}
+
+	.entry-categories {
+		a {
+			font-family: $body-font;
+			font-size: 0.75rem;
+			text-decoration:none;
+			color: #d2d2d2;
+		}
+	}
+
+	.entry-content {
+		font-size: 0.9375rem;
+		color: #b1b4b6;
+		line-height: 1.5;
+		font-weight: 300;
+	}
+
+	.entry-link {
+		font-family: $heading-font;
+		font-weight: 700;
+		font-size: 1rem;
+		color: $theme-color;
+		text-decoration: none;
+	}
+}
