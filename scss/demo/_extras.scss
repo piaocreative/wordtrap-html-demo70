@@ -31,6 +31,10 @@
 	top: 5.625rem;	
 }
 
+.container-fluid {
+	overflow: hidden;
+}
+
 a {
 	.link-icon {
 		@include transition(all 0.3s ease-in-out);

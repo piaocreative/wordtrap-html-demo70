@@ -236,10 +236,10 @@
 
 	&.ads0 {
 		img {
-			height: 24.5rem;
+			height: 24rem;
 
 			@include media-breakpoint-down(xxl) {
-				height: 22.5rem;
+				height: 22rem;
 			}
 		}
 	}
