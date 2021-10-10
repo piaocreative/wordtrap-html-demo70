@@ -19,11 +19,6 @@
 .widget {
 	position: relative;
 
-	p {
-		font-family: 'Open Sans';
-		font-weight: 400;
-	}
-
 	.widget-title {
 		color: $black;		
 		font-size: 0.875rem;
@@ -156,14 +151,7 @@
 	// Widget - custom html
 	&.widget-custom-html {
 		.widget-content {
-			a {
-				display: block;
-				text-decoration: none;
-				font-family: $body-font;
-			}
-
 			p {
-				font-family: $body-font;
 				font-weight: 300;
 				font-size: 1rem;
 				color: #c3c3c3;
@@ -174,27 +162,6 @@
 
 				&.heading-font {
 					letter-spacing: 0.1rem
-				}
-			}
-		}
-	}
-
-	// Widget - feedback
-	&.widget-feedback {
-		.widget-content {
-			p {
-				letter-spacing: 0.1rem
-			}
-
-			#widget-feedback-form {
-
-				input {
-					background-color: #f9f9f9;
-					color:#d0d0d0;
-				}
-				
-				.input-group-append {
-					margin-left: -2.875rem;
 				}
 			}
 		}
@@ -218,7 +185,7 @@
 
 						input {
 							width: 100%;
-							border-radius: 1rem !important;
+							border-radius: 1rem;
 						}
 
 						button {
@@ -227,7 +194,7 @@
 						}
 
 						.input-group-append {
-							margin: 0 !important;
+							margin: 0;
 						}
 					}
 				}
@@ -236,48 +203,7 @@
 
 			::placeholder {
 				color: #c3c3c3;
-				opacity: 1; /* Firefox */
 			  }
-			  
-			:-ms-input-placeholder { /* Internet Explorer 10-11 */
-			color: #c3c3c3;
-			}
-			
-			::-ms-input-placeholder { /* Microsoft Edge */
-			color: #c3c3c3;
-			}
-		}
-	}
-
-	// Widget - Products
-	&.widget-products {
-		.widget-content {
-			.product {
-				display: flex;
-				align-items: center;
-				margin-bottom: 0.625rem;
-
-				.product-image {
-					flex: 1;
-					height: 8.25rem;
-					max-width: 9.75rem;
-				}
-
-				.product-details {
-					flex: 1;
-					padding: 0 1.25rem;					
-				}
-
-				.product-price {					
-					margin-bottom: 0.625rem;
-				}
-
-				.product-title {
-					a {
-						color: $white;																		
-					}					
-				}
-			}
 		}
 	}
 }

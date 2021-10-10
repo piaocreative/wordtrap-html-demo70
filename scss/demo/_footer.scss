@@ -16,14 +16,6 @@
 
 #footer {
 	position: relative;
-	font-size: 0.9rem;
-
-	@include media-breakpoint-down(lg) {
-		.col-lg-8, .col-lg-4 {
-			border: 0 !important;
-			padding: 0 !important;
-		}
-	}
 }
 
 #footer-main {

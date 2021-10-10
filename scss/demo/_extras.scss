@@ -35,57 +35,11 @@
 	overflow: hidden;
 }
 
-a {
-	.link-icon {
-		@include transition(all 0.3s ease-in-out);
-	}
-
-	&:hover {
-		.link-icon {
-			@include translateX(1rem);
-		}
-	}	
-}
-
-.about {
-	p {
-		font-size: 0.875rem;
-		font-family: $body-font;
-		line-height: 1.5rem;
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding-left: 2rem !important;
-		padding-right: 2rem !important;
-
-		.col-lg-4 {
-			.bg-primary {
-				padding: 2rem !important;
-			}
-		}
-	}
-
-	.about-banner-content {
-		h4 {
-			font-size: 1.325rem;
-			color: #66c584;
-			font-weight: 400;
-		}
-
-		@include media-breakpoint-down(sm) {
-			.w-50 {
-				width: auto !important;
-			}
-		}
-	}
-}
-
 .about-us-link {
 	a {
 		padding: 0.5rem 4rem;
 		background-color: $theme-color;
 		color: white;
-		text-decoration: none;
 		font-size: .75rem;
 		border-radius: 2rem;
 		display: inline-block;
@@ -109,7 +63,7 @@ a {
 	}
 
 	@include media-breakpoint-down(lg) {
-		margin-top: 1rem !important;
+		margin-top: 1rem;
 	}
 }
 

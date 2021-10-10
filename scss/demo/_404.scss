@@ -3,67 +3,24 @@
 	404.scss
 
 -----------------------------------------------------------------*/
-.error-404 {
+#error-404 {
     position: relative;
-
-    .error-content {
-        position: absolute;
-        top: 8rem;
-        left: 0;
-        right: 0;
-
-        p {
-            font-family: $body-font;
-            font-size: 3rem;
-            font-weight: 300;
-            color: $white;
-        }
-
-        h2 {
-            font-family: $heading-font;
-            font-weight: 700;
-            color: $white;
-        }
-
-        a {
-            text-decoration: none;
-            font-size: 0.875rem;
-            font-weight: 600;
-            padding: 1.5rem 3.5rem;
-            position: relative;
-            top: 28rem;
-        }
+    p {
+        font-size: 3rem;
+        font-weight: 300;
+        color: $white;
     }
 
-    @include media-breakpoint-down(lg) {
-        .error-banner {
-            img {
-                height: 38rem
-            }
-        }
-
-        .error-content {
-            @include media-breakpoint-down(lg) {
-                top: 2rem;
-            }        
-
-            a { 
-                top: 25rem;
-            }
-        }
+    h2 {
+        font-family: $heading-font;
+        font-weight: 700;
+        color: $white;
     }
 
-    @include media-breakpoint-down(sm) {
-        .error-banner {
-            img {
-                height: 22rem
-            }
-        }
-
-        .error-content {
-            a {
-                top: 10rem;
-            }
-        }
+    a {
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 1.5rem 3.5rem;
     }
 }
