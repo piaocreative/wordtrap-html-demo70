@@ -105,7 +105,7 @@
 #top-btns {
 	.nav-link {
 		color: #ffffff;		
-		font-size: 1.25rem;	
+		font-size: $h5-font-size;	
 		line-height: 1;
 		padding: 0.7rem;
 		font-family: $body-font;
@@ -158,7 +158,7 @@
 	a.nav-link {
 		color: $topbar-color;
 		display: block;
-		font-size: 0.875rem;
+		font-size: $h6-font-size;
 		font-family: $body-font;	
 
 		@include media-breakpoint-up(lg) {
